@@ -92,3 +92,11 @@ object {
     padding-right: 60px;
     font-size: 25px;
 }
+
+.container {
+    max-width: 800px; /* Adjust the maximum width as needed */
+    padding: 20px; /* Increase padding to create margins */
+    background-color: #fff; /* Background color for your content */
+    border: 1px solid #ccc; /* Optional border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional box shadow */
+}
