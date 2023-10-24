@@ -1,0 +1,94 @@
+body {
+    background-color: #D9CB89;
+    color: #667339;
+    font-family: 'Optima', sans-serif;
+}
+
+.nav-tabs .nav-item .nav-link.active {
+    background-color: #D99982;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    background-color: #D99982;
+  }
+
+.dropdown-toggle[aria-expanded="true"] {
+    background: #D99982;
+}
+
+.dropdown-menu > li > a:hover {
+    background-image: none;
+    background-color: #F2BB9B;
+}
+
+.content {
+    padding-top: 70px;
+    padding-left: 50px;
+    font-size: 26px;
+    font-family: 'Palatino', sans-serif;
+}
+
+.info {
+    justify-content: center;
+    align-items: center;
+}
+
+.info em {
+    font-size: 30px;
+}
+
+nav {
+    background-color: #D9737B;
+    color: #FCC3A2;
+    border: 1px solid white;
+    font-size: 20px;
+}
+
+.navbar-nav > li{
+    padding-left:30px;
+    padding-right:30px;
+  }
+
+img {
+    height: auto;
+    width: auto;
+    max-width: 85%;
+    max-height: 85%;
+}
+
+.cactus {
+    display: block;
+    max-width: 40%;
+    max-height: 40%;
+    width: auto;
+    height: auto;
+}
+
+.icon {
+    max-width: 10%;
+    max-height: 10%;
+    width: auto;
+    height: auto;
+    margin: 0px 30px 10px 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cv {
+    padding-right: 50px;
+}
+
+object {
+    padding-top: 15px;
+    width: 100%;
+    height: 700px;
+}
+
+.contact {
+    padding-top: 70px;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 25px;
+}
