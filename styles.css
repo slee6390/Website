@@ -4,15 +4,55 @@ body {
     font-family: 'Optima', sans-serif;
 }
 
-.nav-tabs .nav-item .nav-link.active {
-    background-color: #EF8535;
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center; /* Center text content */
 }
 
 .content {
-    padding-top: 70px;
-    padding-left: 50px;
-    font-size: 20px;
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center text content horizontally */
+    padding: 0 40px 0 40px;
+    height: 100vh; /* Set the content height to 100% of the viewport height */
+    font-size: 30px;
+    line-height: 1.5;
+    margin-right: 24vw;
     font-family: 'Palatino', sans-serif;
+}
+
+.non-cv {
+    justify-content: center;
+}
+
+/* Custom CSS for navigation menu */
+.vertical-menu {
+    z-index: 1; /* Set a higher stacking order to ensure it's above the content */
+    top: 0;
+    right: 0;
+    bottom: 20px; /* Adjust this value as needed */
+    position: fixed; /* Fixed positioning to keep the menu in view */
+    font-size: 40px;
+    width: 20vw; /* Adjust the width as needed */
+    height: 100%; /* Full height of the viewport */
+    background-color: #EF8535; /* Background color of the menu */
+    padding: 20px; /* Add space for menu items */
+}
+
+.vertical-menu a {
+    display: block;
+    color: #fff; /* Text color */
+    text-decoration: none;
+    padding: 10px 0; /* Adjust spacing between items */
+    line-height: 1.5; /* Vertically center the text */
+}
+
+.vertical-menu a:hover {
+    background-color: #FFCE05; /* Background color on hover */
 }
 
 h1 {
@@ -27,26 +67,6 @@ h1 {
     margin: 0 auto; /* Center the image horizontally */
 }
 
-.info {
-    justify-content: center;
-    align-items: center;
-}
-
-.info em {
-    font-size: 30px;
-}
-
-nav {
-    background-color: #FFCE05;
-    color: #EF8535;
-    font-size: 20px;
-}
-
-.navbar-nav > li{
-    padding-left:30px;
-    padding-right:30px;
-  }
-
 img {
     height: auto;
     width: auto;
@@ -55,31 +75,18 @@ img {
 }
 
 .logo {
-    max-width: 50%;
+    max-width: 80%;
 }
 
-.cactus {
-    display: block;
+.icon {
     max-width: 40%;
     max-height: 40%;
     width: auto;
     height: auto;
 }
 
-.icon {
-    max-width: 10%;
-    max-height: 10%;
-    width: auto;
-    height: auto;
-    margin: 0px 30px 10px 10px;
-}
-
-a {
-    text-decoration: none;
-}
-
 .cv {
-    padding-right: 50px;
+    padding-top: 20px;
 }
 
 .contact {
@@ -87,4 +94,8 @@ a {
     padding-left: 60px;
     padding-right: 60px;
     font-size: 25px;
+}
+
+a {
+    color: #EF8535; /* Change the color to your desired color */
 }
