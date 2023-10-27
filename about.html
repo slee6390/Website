@@ -9,23 +9,70 @@
         <div class="container">
             <div class="vertical-menu">
                 <a href="index.html">Home</a>
-                <a href="about.html">About</a>
+                <a href="about.html" class="selected"> <span class="sunflower-icon">🌻</span>About</a>
                 <a href="cv.html">CV</a>
                 <a href="projects.html">Projects</a>
                 <a href="contact.html">Contact</a>
             </div>
 
-            <div class="content non-cv">
-                <h2>Hi there, I'm Seo Yeon (Sunny) Lee.</h2>
-                By day, I serve as a research assistant, 
-                where I'm deeply committed to the art of effective communication and the excitement of creative problem-solving.
-                But that's just part of my journey. 
-                I'm on an exploration to unearth the true crux of my passions and potential. 
-                I'm on a quest to find the intersection of my diverse interests, 
-                where they come together to unveil my fullest capabilities.
-                <br><br>
-                Care to join me on this incredible journey? Let's take a glimpse into the chapters of my story so far.
+            <div class="content non-cv about">
+
+                <div class="interests">
+                    <div id="interest1" class="interest-content">
+                        <h1>Neuroscience</h1>
+                        Neuroscience is not just a subject; it's a world of wonder where I first found my academic passion. During my time at the University of Southern California, I dove headfirst into the captivating world of the brain. It all began with my undergraduate major and my early research, where I unraveled the intricate connections between genetics and behavior in mice with high-risk autism genes. But the real spark for this journey was ignited long before, through my heartfelt interactions with children with neurodevelopmental disorders. Their unique personalities and experiences were my inspiration. Today, my fascination with the human mind continues as I work with individuals on the schizophrenia spectrum. It's a journey of discovery and compassion that keeps me enthralled in the world of neuroscience.
+                    </div>
+                    <div id="interest2" class="interest-content">
+                        <h1>Cognitive Science</h1>
+                        Enter the enchanting realm of cognitive science. It's like stepping into the vibrant garden of the human mind, where thoughts and actions bloom with endless wonder. During my time at USC, I embraced this fascinating field as one of my majors. My passion for unraveling the intricacies of human cognition led me to explore not only the depths of the mind but also the captivating intersections of philosophy and linguistics. Cognitive science isn't just about answers; it's about asking the right questions and connecting the threads that weave our understanding of the human experience.
+                    </div>
+                    <div id="interest3" class="interest-content">
+                        <h1>Computer Science</h1>
+                        Ah, the world of coding and logic, it's like a bright and delightful puzzle! My journey into computer science started with an introductory coding class during my time at USC, and I couldn't help but fall for it. Those weekends spent on coding projects? They turned from moments of frustration into charms. Coding, I realize, is like a language of its own, a unique way to weave your thoughts into the digital canvas. Though I briefly put it aside amid the rigors of double majoring, I rekindled this newfound interest post-graduation. With online courses, the spark was reignited, and now, I'm eager to explore coding at a deeper, more professional level. It's amazing how a few lines of code can open up an entirely new world of possibilities.
+                    </div>
+                    <div id="interest4" class="interest-content">
+                        <h1>Healthcare</h1>
+                        My experiences working with children who have neurodevelopmental disorders have left an indelible mark. I remember how their smiles would brighten when I connected with their unique routines and habits, meeting them where they were. Those moments were pure sunshine, a testament to the power of understanding. These lessons apply equally to my interactions with adults on the schizophrenia spectrum and even neurotypical individuals. The ability to bridge communication gaps and truly connect with others remains my driving force. Academic research and healthcare both play vital roles in this journey, each contributing in their own special way. The impactful work in healthcare leaves me not only impressed but also deeply inspired, growing my interest to this ever-evolving field.
+                    </div>
+                    <div id="interest5" class="interest-content">
+                        <h1>Education</h1>
+                        From a young age, I harbored a deep-seated dream of becoming a teacher. As I ventured further into the realm of research, I realized that I could inspire others not only through education but also by sharing my knowledge. Tutoring became my way of lighting up minds and nurturing academic growth, a journey that fills my heart with joy and satisfaction. My path may twist and turn, but there's no doubt that this passion for guiding and enlightening others will always be a radiant part of my future.
+                    </div>
+                </div>
+
+                <div class="about-info">
+                    Welcome to my sunny corner of the world! I'm Seo Yeon Lee, but you can call me Sunny. By day, I don the hat of a Clinical Research Assistant at Beth Israel Deaconess Medical Center, where I dive into the delightful world of effective communication and embrace the adventure of creative problem-solving. Yet, this is just one colorful petal on the sunflower of my journey. I'm on a quest to uncover the heart of my passions and potential, seeking that radiant spot where all my diverse interests bloom and reveal my fullest capabilities. Will you journey with me? Click on any of the sunflowers to explore my myriad interests.
+                </div>
+
+                <div class="sunflowers">
+                    <div class="sunflower" id="sunflower1"></div>
+                    <div class="sunflower" id="sunflower2"></div>
+                    <div class="sunflower" id="sunflower3"></div>
+                    <div class="sunflower" id="sunflower4"></div>
+                    <div class="sunflower" id="sunflower5"></div>
+                </div>
             </div>
         </div>
+
+        <script>
+            // Get references to the sunflowers and interest contents
+            const sunflowers = document.querySelectorAll('.sunflower');
+            const interestContents = document.querySelectorAll('.interest-content');
+            const currentText = document.querySelector('.about-info');
+        
+            // Add a click event listener to each sunflower
+            sunflowers.forEach((sunflower, index) => {
+                sunflower.addEventListener('click', () => {
+                    currentText.style.display = 'none';
+                    interestContents.forEach(content => {
+                        content.style.display = 'none';
+                    });
+        
+                    // Show the clicked sunflower's corresponding interest content
+                    interestContents[index].style.display = 'block';
+                });
+            });
+        </script>
+
     </body>
 </html>

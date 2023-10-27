@@ -29,6 +29,10 @@ body {
     justify-content: center;
 }
 
+.about {
+    font-size: 25px;
+}
+
 /* Custom CSS for navigation menu */
 .vertical-menu {
     z-index: 1; /* Set a higher stacking order to ensure it's above the content */
@@ -52,19 +56,63 @@ body {
 }
 
 .vertical-menu a:hover {
-    background-color: #FFCE05; /* Background color on hover */
+    background-color: #FFECB3;
 }
+
+
+.vertical-menu a.selected {
+    background-color: #FFCE05;
+}
+
+.sunflower-icon {
+    color: #FFD700; /* Set the color to your desired sunflower color */
+    font-size: 40px; /* Adjust the size as needed */
+    margin-right: 10px; /* Add space between the menu text and the icon */
+}
+
 
 h1 {
     font-size: 40px;
+    text-align: left;
+    color: #EF8535;
+
 }
 
-.circular-image {
-    border-radius: 50%; /* Makes the image circular */
-    max-width: 200px; /* Adjust the size as needed */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Center the image horizontally */
-    margin: 0 auto; /* Center the image horizontally */
+.interests .interest-content {
+    display: none;
+}
+
+.sunflowers {
+    display: flex; /* Make the sunflowers display horizontally */
+    justify-content: center; /* Center the sunflowers horizontally within the container */
+}
+
+.sunflower {
+    width: 150px; 
+    height: 150px; 
+    margin-top: 25px;
+    background-size: cover;
+    cursor: pointer;
+}
+
+#sunflower1 {
+    background-image: url('1.png'); 
+}
+
+#sunflower2 {
+    background-image: url('2.png'); 
+}
+
+#sunflower3 {
+    background-image: url('3.png'); 
+}
+
+#sunflower4 {
+    background-image: url('4.png'); 
+}
+
+#sunflower5 {
+    background-image: url('5.png');
 }
 
 img {
@@ -74,19 +122,9 @@ img {
     max-height: 85%;
 }
 
-.logo {
-    max-width: 80%;
-}
-
-.icon {
-    max-width: 40%;
-    max-height: 40%;
-    width: auto;
-    height: auto;
-}
-
 .cv {
     padding-top: 20px;
+    font-size: 25px;
 }
 
 .contact {
@@ -96,6 +134,14 @@ img {
     font-size: 25px;
 }
 
+.top-left-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 700px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
 a {
-    color: #EF8535; /* Change the color to your desired color */
+    color: #EF8535; 
 }
